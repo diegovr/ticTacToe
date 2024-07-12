@@ -6,7 +6,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - master  # Cambia "main" por la rama que desees
+      - main  # Cambia "main" por la rama que desees
   pull_request:
     paths:
       - '**/*.py'

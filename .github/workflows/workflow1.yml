@@ -41,6 +41,11 @@ jobs:
         echo "Running black..."
         black --check .
 
+    - name: Lint with Flake8 by action
+      uses: py-actions/flake8@v2
+      with:
+        ignore: "F401, E501"
+
     - name: Lint with flake8
       run: |
         echo "Running flake8..."

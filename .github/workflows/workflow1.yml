@@ -44,7 +44,7 @@ jobs:
     - name: Lint with Flake8 by action
       uses: py-actions/flake8@v2
       with:
-        ignore: "F401, E501"
+        ignore: "F401,E501"
 
     - name: Lint with flake8
       run: |

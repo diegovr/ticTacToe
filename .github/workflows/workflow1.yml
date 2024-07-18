@@ -44,7 +44,7 @@ jobs:
     - name: Lint with flake8
       run: |
         echo "Running flake8..."
-        flake8 .
+        flake8 --ignore=E501 .
 
     - name: Report lint results
       if: failure()

@@ -49,7 +49,7 @@ jobs:
     - name: Lint with flake8
       run: |
         echo "Running flake8..."
-        flake8 --ignore=E501 .
+        flake8 --ignore=E501,W503 .
 
     - name: Report lint results
       if: failure()
